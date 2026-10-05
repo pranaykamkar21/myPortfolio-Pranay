@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pranay Kamkar | Resume</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17242b;
+      --muted: #52636b;
+      --accent: #087e83;
+      --rule: #d6e1df;
+      --paper: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    @page { size: A4; margin: 13mm 15mm; }
+
+    body {
+      margin: 0;
+      background: #e9efed;
+      color: var(--ink);
+      font: 10pt/1.38 "Segoe UI", Arial, sans-serif;
+    }
+
+    main {
+      width: min(210mm, 100%);
+      min-height: 297mm;
+      margin: 22px auto;
+      padding: 13mm 15mm;
+      background: var(--paper);
+      box-shadow: 0 8px 32px #17242b1c;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: flex-end;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 13px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 26pt;
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .role {
+      margin: 7px 0 0;
+      color: var(--accent);
+      font-size: 11pt;
+      font-weight: 650;
+    }
+
+    .contact {
+      max-width: 48%;
+      color: var(--muted);
+      font-size: 8.5pt;
+      text-align: right;
+      line-height: 1.55;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    .contact a { color: var(--accent); }
+
+    section { margin-top: 13px; }
+
+    h2 {
+      margin: 0 0 6px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid var(--rule);
+      color: var(--accent);
+      font-size: 10pt;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    p { margin: 0; }
+    .entry { margin-top: 7px; }
+
+    .entry-heading {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-weight: 700;
+    }
+
+    .entry-subtitle {
+      margin-top: 1px;
+      color: var(--muted);
+      font-size: 9pt;
+    }
+
+    ul {
+      margin: 4px 0 0;
+      padding-left: 16px;
+    }
+
+    li { margin: 2px 0; }
+
+    .skills p { margin: 3px 0; }
+    .skills strong { color: var(--ink); }
+
+    @media screen and (max-width: 600px) {
+      main { min-height: 0; margin: 0; padding: 24px 20px; }
+      header { align-items: flex-start; flex-direction: column; gap: 8px; }
+      .contact { max-width: 100%; text-align: left; }
+    }
+
+    @media print {
+      body { background: #fff; font-size: 9.5pt; }
+      main { width: auto; min-height: 0; margin: 0; padding: 0; box-shadow: none; }
+      a { color: inherit; }
+      section, .entry { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>Pranay Kamkar</h1>
+        <p class="role">Computer Science &amp; Engineering Student</p>
+      </div>
+      <div class="contact">
+        Bengaluru, Karnataka<br>
+        <a href="https://github.com/pranaykamkar21">github.com/pranaykamkar21</a><br>
+        <a href="https://www.linkedin.com/in/pranay-kamkar">linkedin.com/in/pranay-kamkar</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Profile</h2>
+      <p>Second-year Computer Science &amp; Engineering student at Reva University with interests in software and web application development, problem solving, and computer vision. Building programming fundamentals through practical projects and coding practice, with a long-term goal of becoming a software developer.</p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-heading"><span>Reva University</span><span>Bengaluru, Karnataka</span></div>
+        <p class="entry-subtitle">Computer Science &amp; Engineering | Second Year, Third Semester</p>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>Technical Skills &amp; Areas of Study</h2>
+      <p><strong>Programming:</strong> C, Java, Python</p>
+      <p><strong>Web:</strong> HTML, web application development</p>
+      <p><strong>Computer science:</strong> Data structures, problem solving</p>
+      <p><strong>Data and computer vision:</strong> SQL, OpenCV, YOLO, object tracking</p>
+    </section>
+
+    <section>
+      <h2>Selected Projects</h2>
+      <div class="entry">
+        <div class="entry-heading"><span>AI-Based Intelligent Video Analytics Platform</span><span>Smart India Hackathon</span></div>
+        <p class="entry-subtitle">Python, OpenCV, YOLO, object tracking</p>
+        <ul><li>Worked on a video analytics concept for detecting and tracking people using existing CCTV infrastructure, with analysis of potentially suspicious activity.</li></ul>
+      </div>
+      <div class="entry">
+        <div class="entry-heading"><span>Voice-Controlled Home Automation System</span></div>
+        <ul><li>Outlined voice-driven device control with authentication, sensor management, notifications, and a monitoring dashboard.</li></ul>
+      </div>
+      <div class="entry">
+        <div class="entry-heading"><span>Employee Payroll Management System</span></div>
+        <ul><li>Designed a system concept for organizing employee records and payroll processing information.</li></ul>
+      </div>
+      <div class="entry">
+        <div class="entry-heading"><span>Online Examination System</span></div>
+        <ul><li>Outlined an examination workflow covering login, questions, submission, and result handling.</li></ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Participation &amp; Coding Practice</h2>
+      <p>Smart India Hackathon participation. Regular coding practice through HackerRank and LeetCode.</p>
+      <p class="entry-subtitle">
+        <a href="https://www.hackerrank.com/profile/pranaykamkar073">HackerRank</a> ·
+        <a href="https://leetcode.com/u/pranaykamkar21/">LeetCode</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
